@@ -4,7 +4,9 @@ import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 import org.igorshprogects.studytelegrambot.entity.user.User;
+import org.springframework.cglib.core.Local;
 
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Getter
@@ -33,9 +35,8 @@ public class UserDetails {
     @Column(name = "registered_at")
     String registeredAt;
 
-    @OneToOne
-    @JoinColumn(name = "user_id")
-    User user;
+    @Column(name = "now_updating_timetable")
+    String timetableId;
 
 
 

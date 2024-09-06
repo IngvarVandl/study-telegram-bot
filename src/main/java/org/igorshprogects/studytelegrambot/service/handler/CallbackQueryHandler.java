@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.meta.api.methods.BotApiMethod;
 import org.telegram.telegrambots.meta.api.objects.CallbackQuery;
 import static org.igorshprogects.studytelegrambot.service.data.CallbackData.*;
-import static org.igorshprogects.studytelegrambot.service.data.Command.SEARCH;
+import static org.igorshprogects.studytelegrambot.service.data.CallbackData.*;
 
 @Service
 @FieldDefaults(level = AccessLevel.PRIVATE)
